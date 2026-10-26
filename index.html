@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Lookup</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header>
+        <h1 class="font-inter font-bold text-center text-2xl p-5">Github Profile Lookup</h1>
+    </header>
+
+    <main>
+        <form class="flex justify-center">
+            <label for="name" class="font-inter p-3">Enter Username Here:</label>
+            <input id="uInput" type="text" id="name" name="name" placeholder="Enter text here..." class="border-1 p-3 placeholder-gray-600">
+            <button id="sButton" class="flex border-1 p-2 text-white font-inter bg-lime-400">Look Up</button>
+        </form>
+    
+
+        <section class="flex flex-col justify-center items-center mt-7 font-inter font-semibold">
+            <img id="oCard" class="w-40 h-40 oCard" src="/assets/octocat.png" alt="Octocat!">
+            <p id="username"></p>
+            <p id="identification"></p>
+            <p id="nodeID"></p>
+        </section>
+
+        <section class="flex justify-center">
+            <p id="notFound"></p>
+        </section>
+
+    </main>
+
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
